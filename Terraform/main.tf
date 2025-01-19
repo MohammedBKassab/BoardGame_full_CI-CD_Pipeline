@@ -50,7 +50,7 @@ resource "aws_instance" "Kubeadm_Instances" {
   ami           = var.ami_id
   instance_type = var.instance_type
   key_name      = aws_key_pair.Servers_key.key_name
-  user_data = "${file("kubeadm.sh")}" #-------> kubeadm Installation script
+  user_data = file("kubeadm.sh") #-------> kubeadm Installation script
   vpc_security_group_ids = [aws_security_group.Cluster_SG.id]
   associate_public_ip_address = true
   root_block_device {
