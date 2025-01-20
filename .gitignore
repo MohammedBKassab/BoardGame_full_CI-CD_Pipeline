@@ -1,0 +1,9 @@
+# Ignore Terraform state and backup files
+Terraform/.terraform/
+Terraform/.terraform.lock.hcl
+Terraform/terraform.tfstate
+Terraform/terraform.tfstate.backup
+
+# Ignore private key files
+Terraform/Servers_key.pem
+
