@@ -1,0 +1,7 @@
+# creating a user service account to perform Deployments
+# Create a name spcace first on the master node using <kubectl create namespace webapps>
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: jenkins
+  namespace: webapps

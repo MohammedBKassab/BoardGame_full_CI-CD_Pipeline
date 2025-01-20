@@ -1,0 +1,44 @@
+#create a role for the ServiceAccount user
+apiVersion: rbac.authorization.k8s.io/v1
+kind: Role 
+metadata:
+  name: role
+  namespace: webapps
+rules:
+- apiGroups:
+  - ""
+  - extensions
+  - aps
+  - rbac.authorization.k8s.io
+  - policy
+  - autoscaling
+  - batch
+  resources:
+  - pods
+  - nodes
+  - servicesaccounts
+  - componentstatuses
+  - configmaps
+  - daemonsets
+  - deployments
+  - endpoints
+  - horizontalpodautoscalers
+  - ingresses
+  - jobs
+  - limitranges
+  - namespaces
+  - persistentvolumeclaims
+  - persistentvolumes
+  - replicasets
+  - replicationcontrollers
+  - resourcequotas
+  - secrets
+  - services
+  - statefulsets
+  verbs:
+  - get
+  - list
+  - create
+  - update
+  - delete
+  - patch

@@ -7,3 +7,4 @@ Terraform/terraform.tfstate.backup
 # Ignore private key files
 Terraform/Servers_key.pem
 
+.mvn
