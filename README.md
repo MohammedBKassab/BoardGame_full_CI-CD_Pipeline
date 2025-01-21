@@ -109,6 +109,10 @@ This repository contains the CI/CD pipeline architecture for a project involving
 | Verify Deployment           | 15s      |
 | Declarative Post Actions    | 1m       |
 
+## Enjoy the Project :) 
+![alt text](image.png)
+
+
 ## Conclusion
 
 This architecture ensures a robust and automated process for deploying applications with high-quality code and secure practices. By leveraging modern tools, the pipeline achieves efficiency and reliability in application delivery.
